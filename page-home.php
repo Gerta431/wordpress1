@@ -6,7 +6,32 @@
                         Hero
                     </section>
                     <section class="services">
-                        Services
+                        <h2>Services</h2>
+                        <div class="container">
+                        <div class="service-item">
+                                <?php
+                                if(is_active_sidebar('service-1')){
+                                    dynamic_sidebar('service-1');
+                                }
+                                ?>
+                            </div>
+                            <div class="service-item">
+                                <?php
+                                if(is_active_sidebar('service-2')){
+                                    dynamic_sidebar('service-2');
+                                 }
+                                ?>
+                          </div>
+                            <div class="service-item">
+                                <?php
+                                if(is_active_sidebar('service-3')){
+                                    dynamic_sidebar('service-3');
+                             }
+                                ?>
+                            </div>
+
+                            </div>
+                        </div>
                     </section>
                     <section class="home-blog">
                         <div class="container">
@@ -36,3 +61,16 @@
             </div>
         </div>
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+

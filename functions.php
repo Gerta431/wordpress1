@@ -34,3 +34,47 @@ function dstheme_config(){
 }
 
 add_action('after_setup_theme', 'dstheme_config', 0);
+add_action('widgets_init', 'dstheme_sidebars');
+
+function dstheme_sidebars(){
+    register_sidebar(
+        array(
+        'name' => 'Blog Sidebar',
+        'id' => 'sidebar-blog',
+        'description' => 'This is the blog side bar',
+        'before_widget' => '<div class = "widget wraper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class = "widget-title">'
+        )
+    );
+    register_sidebar(
+        array(
+        'name' => 'Service 1',
+        'id' => 'sidebar-service-1',
+        'description' => 'first service area',
+        'before_widget' => '<div class = "widget wraper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class = "widget-title">'
+        )
+    );
+    register_sidebar(
+        array(
+        'name' => 'Service 2',
+        'id' => 'service-2',
+        'description' => 'second service area',
+        'before_widget' => '<div class = "widget wraper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class = "widget-title">'
+        )
+    );
+    register_sidebar(
+        array(
+        'name' => 'Service 3',
+        'id' => 'service-3',
+        'description' => 'third service area',
+        'before_widget' => '<div class = "widget wraper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class = "widget-title">'
+        )
+    );
+}
