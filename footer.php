@@ -9,7 +9,6 @@
             </div>
         </footer>
     </div>
-    <nav class="footer-menu">
     <?php wp_footer(); ?>
 </body>
 </html>
