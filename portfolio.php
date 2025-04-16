@@ -3,7 +3,10 @@
     <div class="col-8">
         <?php
         $args=[
-            'cat'=>2,
+            //'cat'=>2,
+            //'category_name'=>'1',
+            //'category_in'=>array(2,3),
+            //'category_and'=>array(2,3),
             'posts_per_page'=>5
         ]
 
